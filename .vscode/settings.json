@@ -1,0 +1,49 @@
+{
+  // Repository-specific settings (override user settings)
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  // Spell Check
+  "cSpell.enabled": true,
+  "cSpell.enabledFileTypes": {
+    "shellscript": true
+  },
+  "cSpell.checkLimit": 0,
+  "cSpell.files": [
+    "**/*"
+  ],
+  "cSpell.words": [
+    "osascript",
+    "SwitchAudioSource",
+    "BenQ",
+    "EW3290U",
+    "EW2880U",
+    "HomePod",
+    "AirPods",
+    "MacBook"
+  ],
+  "cSpell.ignoreWords": [
+    "xargs"
+  ],
+  // Formatting - Repository-specific (from .editorconfig)
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  // Linting
+  "shellcheck.enable": true,
+  "shellcheck.run": "onSave",
+  // Editor - Repository-specific
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "files.encoding": "utf8"
+}
