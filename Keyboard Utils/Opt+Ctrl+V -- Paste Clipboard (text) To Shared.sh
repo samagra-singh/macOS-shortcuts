@@ -1,21 +1,13 @@
 #!/bin/bash
 
-# CONFIGURATION
-# --------------------
 DEST_DIR="/Users/Shared"
-TIMESTAMP=$(date +"%Y%d%m-%H%M%S")
+TIMESTAMP=$(date +"%Y%m%d-%H%M%S")
 FILENAME="Clipboard-${TIMESTAMP}.txt"
-
-# LOGIC
-# --------------------
-# pbpaste automatically ignores files and images, returning empty for them.
 TEXT_CONTENT=$(pbpaste)
 
 if [ -n "$TEXT_CONTENT" ]; then
-    # Content exists -> Save to file
-    echo "$TEXT_CONTENT" > "$DEST_DIR/$FILENAME"
-    osascript -e "display notification \"Saved as $FILENAME\" with title \"?? Text Pasted to \\\"Shared\\\"\""
+    echo -n "$TEXT_CONTENT" > "$DEST_DIR/$FILENAME"
+    osascript -e "display notification \"Saved as $FILENAME. ⚠️ Emojis in clipboard content are preserved but may not work.\" with title \"📋 Text Pasted to \\\"Shared\\\"\""
 else
-    # Content is empty -> Must be a File, Image, or Empty
-    osascript -e "display notification \"Clipboard contains files, images, or is empty. Only text is supported.\" with title \"?? Unsupported Content\""
+    osascript -e "display notification \"Clipboard contains files, images, or is empty. Only text is supported.\" with title \"🚫 Unsupported Content\""
 fi
