@@ -36,9 +36,9 @@ esac
 # --------------------
 # Attempt to switch output
 if "$SWITCHER" -s "$NEXT_DEVICE" -t output; then
-    
+
     # Optional: Also switch system alert sounds (uncomment if desired)
-    # "$SWITCHER" -s "$NEXT_DEVICE" -t system 
+    # "$SWITCHER" -s "$NEXT_DEVICE" -t system
 
     if $UNKNOWN_CURRENT; then
         osascript -e "display notification \"Audio source reset from $CURRENT. Add it to the script to support toggling.\" with title \"?? Reset to $NEXT_DEVICE\""

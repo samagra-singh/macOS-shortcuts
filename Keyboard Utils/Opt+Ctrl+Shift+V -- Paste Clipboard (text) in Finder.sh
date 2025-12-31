@@ -33,10 +33,10 @@ TEXT_CONTENT=$(pbpaste)
 if [ -n "$TEXT_CONTENT" ]; then
     # Write text to the resolved path
     echo "$TEXT_CONTENT" > "$FULL_PATH"
-    
+
     # Optional: Reveal the new file in Finder so you see it immediately
     # osascript -e "tell application \"Finder\" to reveal POSIX file \"$FULL_PATH\""
-    
+
     osascript -e "display notification \"Saved to $(basename "$FINDER_PATH")\" with title \"? Pasted clipboard as new file\""
 else
     osascript -e "display notification \"Clipboard is empty or not text.\" with title \"? No Text to paste\""

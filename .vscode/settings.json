@@ -14,14 +14,17 @@
     "**/*"
   ],
   "cSpell.words": [
-    "osascript",
-    "SwitchAudioSource",
-    "BenQ",
-    "EW3290U",
-    "EW2880U",
-    "HomePod",
     "AirPods",
-    "MacBook"
+    "BenQ",
+    "EW2880U",
+    "EW3290U",
+    "HomePod",
+    "MacBook",
+    "osascript",
+    "pdfs",
+    "SwitchAudioSource",
+    "UNMUTE",
+    "Unmuted"
   ],
   "cSpell.ignoreWords": [
     "xargs"
