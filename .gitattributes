@@ -1,0 +1,12 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Shell scripts - enforce LF line endings
+*.sh text eol=lf
+
+# EditorConfig files
+.editorconfig text eol=lf
+
+# VS Code settings
+.vscode/** text eol=lf
+
