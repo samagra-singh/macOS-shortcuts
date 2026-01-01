@@ -15,16 +15,21 @@
   ],
   "cSpell.words": [
     "AirPods",
+    "Automator",
     "BenQ",
     "EW2880U",
     "EW3290U",
     "HomePod",
+    "Karabiner",
     "MacBook",
     "osascript",
     "pdfs",
+    "shfmt",
+    "switchaudio",
     "SwitchAudioSource",
     "UNMUTE",
-    "Unmuted"
+    "Unmuted",
+    "unmuting"
   ],
   "cSpell.ignoreWords": [
     "xargs"
